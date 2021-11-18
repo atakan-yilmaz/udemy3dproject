@@ -1,0 +1,33 @@
+{
+    "name": "defaultAction",
+    "maps": [
+        {
+            "name": "Rocket",
+            "id": "cfebcbbc-030d-485a-947a-4d2de5841f6a",
+            "actions": [
+                {
+                    "name": "ForceUp",
+                    "type": "PassThrough",
+                    "id": "35c641f6-5e03-48f2-a68f-429cd2d4a311",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cbaf179e-3c30-4732-bdcf-86a7a586018f",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ForceUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
