@@ -2,23 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using firstUdemyProject.input;
-
+using firstUdemyProject.movements;
 
 namespace firstUdemyProject.controller
 {
 
     public class playerController : MonoBehaviour
     {
-        [SerializeField] float _force;
-        Rigidbody _rigidBody;
+        
         defaultInput _input;
+        mover _mover;
 
         bool _isForceUp;
+        
 
         private void Awake()
         {
-            _rigidBody = GetComponent<Rigidbody>();
             _input = new defaultInput();
+            _mover = new mover(rigidbody: GetComponent<Rigidbody>());
         }
 
 
@@ -44,7 +45,7 @@ namespace firstUdemyProject.controller
             //physics 
             if (_isForceUp)
             {
-                _rigidBody.AddForce(Vector3.up * Time.deltaTime * _force);
+                _mover.FixedTick();
             }
 
         }
