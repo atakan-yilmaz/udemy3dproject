@@ -21,7 +21,7 @@ namespace gitHubProjectNew.Inputs
 
             _input.Rocket.ForceUp.performed += context => IsForceUp = context.ReadValueAsButton();
 
-            _input.Rocket.LeftRight.performed += context => LeftRight = context.ReadValue<float>();
+            _input.Rocket.LeftRight.performed += context => LeftRight = context.ReadValue<float>(); 
 
             _input.Enable();
         }
