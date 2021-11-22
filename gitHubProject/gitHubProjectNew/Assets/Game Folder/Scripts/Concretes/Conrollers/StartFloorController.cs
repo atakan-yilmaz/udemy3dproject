@@ -13,7 +13,7 @@ namespace gitHubProjectNew.Controllers
 
             PlayerController player = other.collider.GetComponent<PlayerController>();
 
-            if (player !=null)
+            if (player != null)
             {
                 Destroy(this.gameObject);
             }
