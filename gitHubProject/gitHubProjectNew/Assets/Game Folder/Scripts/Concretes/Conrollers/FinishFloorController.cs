@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using gitHubProjectNew.Managers;
 
 namespace gitHubProjectNew.Controllers
 {
@@ -16,7 +17,10 @@ namespace gitHubProjectNew.Controllers
 
             PlayerController player = other.collider.GetComponent<PlayerController>();
 
-            if (player == null) return;
+            if (player == null)
+            {
+                return;
+            }
 
             if (other.GetContact(0).normal.y == -1)
             {
@@ -26,8 +30,9 @@ namespace gitHubProjectNew.Controllers
             else
             {
                 //game over
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                GameManager.Instance.GameOver();
             }
         }
     }
