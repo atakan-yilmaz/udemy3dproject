@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6492245704825684926}
   - component: {fileID: 4453715475190113116}
   - component: {fileID: 3417900488244545794}
+  - component: {fileID: 2040643464314032932}
   - component: {fileID: 6107839364309858637}
   m_Layer: 0
   m_Name: 'Start Floor '
@@ -83,6 +84,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2040643464314032932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099026460831158644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0138b5be3e78d214795b24b759556eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &6107839364309858637
 BoxCollider:
   m_ObjectHideFlags: 0
