@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,6 +54,17 @@ namespace gitHubProjectNew.Managers
         {
             yield return SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + levelIndex);
         }
+
+        public void LoadMenuScene()
+        {
+            StartCoroutine(LoadMenuSceneAsync());
+        }
+
+        private IEnumerator LoadMenuSceneAsync()
+        {
+            yield return SceneManager.LoadSceneAsync("Menu");
+        }
+
         public void Exit()
         {
             Debug.Log("exit process on triggered");
