@@ -43,20 +43,27 @@ namespace gitHubProjectNew.Controllers
         private void OnEnable()
         {
             GameManager.Instance.OnGameOver += HandleOnEventTriggered;
+
+            GameManager.Instance.OnMissionSucced += HandleOnEventTriggered;
         }
 
         private void OnDisable()
         {
             GameManager.Instance.OnGameOver -= HandleOnEventTriggered;
+
+            GameManager.Instance.OnMissionSucced -= HandleOnEventTriggered;
         }
-        
+
         private void Update()
         {
 
             //Debug.Log(_input.LeftRight);
             //Debug.Log(_input.IsForceUp);
 
-            if (!_canMove) return;
+            if (!_canMove)
+            {
+                return;
+            }
 
             if (_input.IsForceUp && !_fuel.IsEmpty)
             {

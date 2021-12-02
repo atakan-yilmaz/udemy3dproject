@@ -16,7 +16,6 @@ namespace gitHubProjectNew.Controllers
 
             if (player != null)
             {
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 GameManager.Instance.GameOver();
             }
         }
