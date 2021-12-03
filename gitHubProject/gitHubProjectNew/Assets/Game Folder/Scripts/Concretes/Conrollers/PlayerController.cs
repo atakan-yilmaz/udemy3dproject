@@ -27,6 +27,8 @@ namespace gitHubProjectNew.Controllers
         public float TurnSpeed => _turnSpeed;
         public float Force => _force;
 
+        public bool CanMove => _canMove;
+
         private void Awake()
         {
             _mover = new Mover(this);
