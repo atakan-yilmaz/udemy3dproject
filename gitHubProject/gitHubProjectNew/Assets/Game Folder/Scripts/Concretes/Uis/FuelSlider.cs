@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using gitHubProjectNew.Movements;
 
-
 namespace gitHubProjectNew.Uis 
 {
     public class FuelSlider : MonoBehaviour
@@ -17,7 +16,6 @@ namespace gitHubProjectNew.Uis
             _slider = GetComponent<Slider>();
             _fuel = FindObjectOfType<Fuel>();
         }
-
         private void Update()
         {
             _slider.value = _fuel.CurrentFuel;

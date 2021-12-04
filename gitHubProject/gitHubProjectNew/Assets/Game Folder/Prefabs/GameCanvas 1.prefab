@@ -1067,7 +1067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -684, y: 41}
+  m_AnchoredPosition: {x: -754, y: 41}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &660040550631541298
@@ -2018,7 +2018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060443207490956908, guid: 316283116a7bb6647aa0dad63f4d8b4d, type: 3}
       propertyPath: m_Name
-      value: GameCanvas
+      value: GameCanvas 1
       objectReference: {fileID: 0}
     - target: {fileID: 5060443207490956908, guid: 316283116a7bb6647aa0dad63f4d8b4d, type: 3}
       propertyPath: m_IsActive
