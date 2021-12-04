@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using gitHubProjectNew.Managers;
+using gitHubProjectNew.Controllers;
 
-
-namespace gitHubProjectNew.Controllers
+namespace gitHubProjectNew.Abstracts.Controllers
 {
-    public class WallController : MonoBehaviour
+    public abstract class WallController : MonoBehaviour
     {
 
         private void OnCollisionEnter(Collision other)
